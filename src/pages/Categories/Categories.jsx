@@ -22,10 +22,11 @@ const Categories = () => {
 
         const form = event.target;
         const name = form.name.value;
+        const price= form.price.value;
         const url = form.url.value;
         const quantity = form.quantity.value;
         const rating = form.rating.value;
-        const category = form.category.value;
+        const categori = form.categori.value;
         const details = form.details.value;
         const email = user?.email;
         const booking = {
@@ -38,7 +39,7 @@ const Categories = () => {
             price: price,
             quantity: quantity,
             Rating: rating,
-            categori: category,
+            categori: categori,
             details: details
         }
 
@@ -86,7 +87,7 @@ const Categories = () => {
                         <label className="label">
                             <span className="label-text">Price</span>
                         </label>
-                        <input type="text" defaultValue={'$'+price} className="input input-bordered" />
+                        <input type="text" name="price" className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
@@ -104,7 +105,7 @@ const Categories = () => {
                         <label className="label">
                             <span className="label-text">Sub category</span>
                         </label>
-                        <input type="text" name="category" defaultValue={categori} className="input input-bordered" />
+                        <input type="text" name="categori"  className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">

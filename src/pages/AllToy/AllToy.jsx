@@ -13,7 +13,23 @@ const AllToy = () => {
             .then(data => setBookings(data))
     })
 
-
+    const handleDelete= id =>{
+        const proceed = confirm('Are you sure you want to delete');
+        if(proceed){
+            fetch(`http://localhost:5000/bookings/${id}`,{
+                method: 'DELETE'
+            })
+            .then(res=>res.json())
+            .then(data=>{
+                console.log(data);
+                if(data.deletedCount >0){
+                  alert('deleted successfully') ;
+                  const remaining = bookings.filter(booking=> booking._id !== id) 
+                setBookings(remaining)
+                }
+            })
+        }
+    }
 
     return (
         <div>
@@ -29,9 +45,10 @@ const AllToy = () => {
                                 </label>
                             </th>
                             <th> Toy Name</th>
-                            <th>Sub-category</th>
+                            <th>Email</th>
                             <th>Price</th>
                             <th>Available Quantity</th>
+                            {/* <th>Sub-category</th> */}
                             <th>Details button</th>
 
                         </tr>
@@ -42,6 +59,7 @@ const AllToy = () => {
                             bookings.map(booking => <AllToyRow
                                 key={booking._id}
                                 booking={booking}
+                            handleDelete={handleDelete}
 
                             ></AllToyRow>)
                         }

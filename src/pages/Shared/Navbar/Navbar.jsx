@@ -17,9 +17,9 @@ const NavBar = () => {
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/about'>About</Link></li>
         {user?.email ? <>
-         <li><Link to='/addtoy'>All toy</Link></li>
+         <li><Link to='/book'>My toy</Link></li>
             <li><Link to='/adtoy'>Add a toy</Link></li>
-            <li><Link to='/bookings'>My toy</Link></li>
+            <li><Link to='/bookings'>All toy</Link></li>
             <li><button onClick={handleLogOut}>Log out</button></li>
          </>
         :
