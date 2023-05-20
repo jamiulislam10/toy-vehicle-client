@@ -42,10 +42,12 @@ const MyJobs = () => {
               <thead>
                   <tr>
                     
+                      <th>Delete</th>
                       <th>Email</th>
                       <th>Name</th>
                       <th>Price</th>
                       <th>Available Quantity</th>
+                      <th>Update</th>
                   
 
                   </tr>
