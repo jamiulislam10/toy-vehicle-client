@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
-
+// import logo from '../../../assets/supply-chain-representation-with-yellow-truck (1).png'
 
 const NavBar = () => {
     const {user,logOut} = useContext(AuthContext);
@@ -16,10 +16,10 @@ const NavBar = () => {
         const navsItem = <>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/blog'>Blogs</Link></li>
+            <li><Link to='/bookings'>All toy</Link></li>
         {user?.email ? <>
          <li><Link to='/mytoy'>My toy</Link></li>
             <li><Link to='/adtoy'>Add a toy</Link></li>
-            <li><Link to='/bookings'>All toy</Link></li>
             <li><button onClick={handleLogOut}>Log out</button></li>
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full" title={user?.displayName}>
@@ -44,7 +44,7 @@ const NavBar = () => {
                     {navsItem}
                 </ul>
             </div>
-            <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+{/* <img src={logo} alt="" /> */}
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">

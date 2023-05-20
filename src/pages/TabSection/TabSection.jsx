@@ -36,7 +36,7 @@ const TabSection = () => {
             </div>
             <Tabs value={activeTab}>
                 <TabList
-                    className="rounded-none border-b border-blue-gray-10 bg-purple-400 p-8 lg:pl-80 pl-10 lg:ml-36  grid grid-cols-3 lg:mr-36"
+                    className="rounded-none  border-b border-blue-gray-10 bg-purple-400 p-8 lg:pl-56 pl-10 lg:ml-44  grid grid-cols-3 lg:mr-44"
 
                 >
                     {data.map(({ value, label }) => (
@@ -50,7 +50,7 @@ const TabSection = () => {
                         </Tab>
                     ))}
                 </TabList>
-                <TabPanel className="grid grid-cols-1 lg:grid-cols-2 ml-36 mr-36">
+                <TabPanel className="grid grid-cols-1 lg:grid-cols-2 lg:ml-36 lg:mr-36 -mt-10">
 
                     {
                         subCategory.slice(0, 2).map(toy => <TabSection1

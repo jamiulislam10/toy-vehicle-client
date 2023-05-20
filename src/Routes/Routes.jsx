@@ -9,6 +9,8 @@ import PrivateRoute from "./PrivateRoute";
 import ViewDetails from "../pages/ViewDetails/ViewDetails";
 import Blog from "../pages/Blog/Blog";
 import MyJobs from "../pages/MyJobs/MyJobs";
+import Update from "../pages/Update/Update";
+import FourOFour from "../pages/FourOFour/FourOFour";
 
 const router = createBrowserRouter([
     {
@@ -48,9 +50,18 @@ const router = createBrowserRouter([
             {
                 path:'/mytoy',
                 element:<MyJobs></MyJobs>
+            },
+            {
+                path:'/update/:id',
+                element:<Update></Update>,
+                loader:({params})=>fetch(`http://localhost:5000/mybookings/${params.id}`)
             }
         ]
     },
+    {
+        path:'*',
+        element:<FourOFour></FourOFour>
+    }
 ]);
 
 
