@@ -1,6 +1,4 @@
-// import { useContext } from "react";
-// import { useLoaderData } from "react-router-dom";
-// import { AuthContext } from "../Provider/AuthProvider";
+
 
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
@@ -15,7 +13,7 @@ const Categories = () => {
             .then(data => setBookings(data))
     }, [])
 
-    const { title, _id, price, img, quantity, rating, categori, description } = bookings;
+    const { title, _id, price, img, quantity, rating,  details } = bookings;
 
     const handleBookService = event => {
         event.preventDefault();
@@ -27,7 +25,6 @@ const Categories = () => {
         const quantity = form.quantity.value;
         const rating = form.rating.value;
         const categori = form.categori.value;
-        const details = form.details.value;
         const email = user?.email;
         const booking = {
             customerName: name,
@@ -38,9 +35,9 @@ const Categories = () => {
             service_id: _id,
             price: price,
             quantity: quantity,
-            Rating: rating,
+            rating: rating,
             categori: categori,
-            details: details
+            
         }
 
         console.log(booking);
@@ -87,7 +84,7 @@ const Categories = () => {
                         <label className="label">
                             <span className="label-text">Price</span>
                         </label>
-                        <input type="text" name="price" className="input input-bordered" />
+                        <input type="text" name="price" defaultValue={price} className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
@@ -111,7 +108,7 @@ const Categories = () => {
                         <label className="label">
                             <span className="label-text">Details description</span>
                         </label>
-                        <input type="text" name="details" defaultValue={description} className="input input-bordered" />
+                        <input type="text" name=" details" defaultValue={ details} className="input input-bordered" />
                     </div>
                 </div>
                 <div className="form-control mt-6">

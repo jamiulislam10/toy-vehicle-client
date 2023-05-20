@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import img from '../../assets/4957412_Mobile-login-Cristin.png'
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import GoogleLogin from "../GoogleLogin/GoogleLogin";
 const Login = () => {
 
     const { signIn } = useContext(AuthContext)
@@ -57,7 +58,7 @@ const Login = () => {
               </div>
             </form>
             <p className='my-4 text-center'>New user <Link className='text-orange-600 font-bold' to="/signup">Sign Up</Link> </p>
-
+<GoogleLogin></GoogleLogin>
           </div>
         </div>
       </div>

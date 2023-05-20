@@ -1,7 +1,7 @@
 import logo1 from '../../../assets/closeup-shot-small-toy-car-wooden-train-track.jpg'
 import logo2 from '../../../assets/kid-playing-home.jpg'
-import logo3 from '../../../assets/closeup-shot-toy-red-wooden-train-wooden-table.jpg'
-import logo4 from '../../../assets/closeup-shot-toy-red-wooden-train-wooden-table.jpg'
+import logo3 from '../../../assets/child-having-fun-during-playtime.jpg'
+import logo4 from '../../../assets/child-with-red-car.jpg'
 const Banner = () => {
     return (
         <div className="carousel w-full h-[600px]">
