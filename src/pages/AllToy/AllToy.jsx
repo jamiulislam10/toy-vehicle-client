@@ -6,7 +6,7 @@ const AllToy = () => {
     const { user } = useContext(AuthContext);
     const [bookings, setBookings] = useState([])
 
-    const url = `http://localhost:5000/bookings?id=${user._id}`
+    const url = `https://toy-vehicle-server.vercel.app/bookings?id=${user._id}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -36,7 +36,6 @@ const AllToy = () => {
                             bookings.map(booking => <AllToyRow
                                 key={booking._id}
                                 booking={booking}
-                            // handleDelete={handleDelete}
 
                             ></AllToyRow>)
                         }

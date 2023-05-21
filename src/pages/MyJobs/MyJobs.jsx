@@ -7,7 +7,7 @@ const MyJobs = () => {
     const [jobs, setJobs] = useState([]);
 
     useEffect(() => {
-      fetch(`http://localhost:5000/mybookings/${user?.email}`)
+      fetch(`https://toy-vehicle-server.vercel.app/mybookings/${user?.email}`)
         .then((res) => res.json())
         .then((data) => {
           console.log(data);
@@ -19,7 +19,7 @@ const MyJobs = () => {
     const handleDelete= id =>{
       const proceed = confirm('Are you sure you want to delete');
       if(proceed){
-          fetch(`http://localhost:5000/mybookings/${id}`,{
+          fetch(`https://toy-vehicle-server.vercel.app/mybookings/${id}`,{
               method: 'DELETE'
           })
           .then(res=>res.json())

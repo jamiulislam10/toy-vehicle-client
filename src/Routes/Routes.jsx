@@ -45,7 +45,7 @@ const router = createBrowserRouter([
             {
                 path: 'details/:id',
                 element: <ViewDetails></ViewDetails>,
-                loader:({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader:({ params }) => fetch(`https://toy-vehicle-server.vercel.app/services/${params.id}`)
             },
             {
                 path:'/mytoy',
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
             {
                 path:'/update/:id',
                 element:<Update></Update>,
-                loader:({params})=>fetch(`http://localhost:5000/mybookingss/${params.id}`)
+                loader:({params})=>fetch(`https://toy-vehicle-server.vercel.app/mybookingss/${params.id}`)
             }
         ]
     },

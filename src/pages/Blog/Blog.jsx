@@ -6,7 +6,7 @@ const Blog = () => {
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
           <a href="/" aria-label="Article">
             <img
-              src="https://i.ibb.co/FxZrKtW/supply-chain-representation-with-yellow-truck.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+              src="https://apaleo.dev/assets/images/oauth/refresh_token_flow.png"
               className="object-cover w-full h-64 rounded"
               alt=""
             />
@@ -97,7 +97,7 @@ const Blog = () => {
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
           <a href="/" aria-label="Article">
             <img
-              src="https://i.ibb.co/rvnh91P/vintage-miniature-car-fake-landscape.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+              src="https://i.ytimg.com/vi/QwevGzVu_zk/maxresdefault.jpg"
               className="object-cover w-full h-64 rounded"
               alt=""
             />
@@ -188,7 +188,7 @@ const Blog = () => {
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
           <a href="/" aria-label="Article">
             <img
-              src="https://images.pexels.com/photos/1576937/pexels-photo-1576937.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+              src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220513123024/ExpressJS-vs-NestJS-5-Differences-That-You-Should-Know.gif"
               className="object-cover w-full h-64 rounded"
               alt=""
             />
@@ -278,7 +278,7 @@ const Blog = () => {
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
           <a href="https://www.facebook.com/" aria-label="Article">
             <img
-              src="https://i.ibb.co/HBFFJsD/red-car-with-christmas-ball-top.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="https://www.tech-prastish.com/wp-content/uploads/2020/01/page-4-img-1.png?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
               className="object-cover w-full h-64 rounded"
               alt=""
             />

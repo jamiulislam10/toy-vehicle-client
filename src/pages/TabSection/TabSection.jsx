@@ -11,7 +11,7 @@ const TabSection = () => {
     const [activeTab, setActiveTab] = useState('html');
     const [subCategory, setSubCategory] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/category')
+        fetch('https://toy-vehicle-server.vercel.app/category')
             .then(res => res.json())
             .then(data => setSubCategory(data))
     }, []);
@@ -32,7 +32,13 @@ const TabSection = () => {
     return (
 
         <div>
-            <div>
+            <div>    <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                    <span className="relative inline-block">
+                    
+                      <span className="relative">The</span>
+                    </span>{' '}
+                    Subcategory of toy vehicle
+                  </h2>
             </div>
             <Tabs value={activeTab}>
                 <TabList

@@ -13,7 +13,7 @@ const handleUpdate =event =>{
     const updatedUser = {name,email}
 
 
-    fetch(`http://localhost:5000/mybookingss/${loadedUser._id}`,{
+    fetch(`https://toy-vehicle-server.vercel.app/mybookingss/${loadedUser._id}`,{
         method: 'PUT',
         headers:{
             'content-type':'application/json'

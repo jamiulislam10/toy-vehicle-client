@@ -8,7 +8,7 @@ const Categories = () => {
 
     const [bookings, setBookings] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://toy-vehicle-server.vercel.app/services')
             .then(res => res.json())
             .then(data => setBookings(data))
     }, [])
@@ -41,7 +41,7 @@ const Categories = () => {
         }
 
         console.log(booking);
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://toy-vehicle-server.vercel.app/bookings', {
             method: 'POST', 
             headers: {
                 'content-type': 'application/json'

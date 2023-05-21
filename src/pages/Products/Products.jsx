@@ -26,7 +26,7 @@ const Products = () => {
 
         console.log(booking);
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://toy-vehicle-server.vercel.app/bookings', {
             method: 'POST', 
             headers: {
                 'content-type': 'application/json'

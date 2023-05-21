@@ -11,28 +11,7 @@ const ExtraSection = () => {
                   </div>
                   <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
                     <span className="relative inline-block">
-                      {/* <svg
-                        viewBox="0 0 52 24"
-                        fill="currentColor"
-                        className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-                      >
-                        <defs>
-                          <pattern
-                            id="9a29985a-fc16-419b-ae53-1670f5ca4491"
-                            x="0"
-                            y="0"
-                            width=".135"
-                            height=".30"
-                          >
-                            <circle cx="1" cy="1" r=".7" />
-                          </pattern>
-                        </defs>
-                        <rect
-                          fill="url(#9a29985a-fc16-419b-ae53-1670f5ca4491)"
-                          width="52"
-                          height="24"
-                        />
-                      </svg> */}
+                    
                       <span className="relative">The</span>
                     </span>{' '}
                    suitable Gallery in my toy
@@ -45,22 +24,22 @@ const ExtraSection = () => {
                 <div className="grid max-w-screen-lg gap-8 row-gap-5 mb-8 sm:grid-cols-2 lg:grid-cols-4 sm:mx-auto">
                   <img
                     className="object-cover w-full h-56 rounded shadow-lg"
-                    src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    src="https://i.ibb.co/J5TWjN2/colorful-car-toys.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                     alt=""
                   />
                   <img
                     className="object-cover w-full h-56 rounded shadow-lg"
-                    src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    src="https://i.ibb.co/5k8gCBg/toy-red-car-with-pinecone-top.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                     alt=""
                   />
                   <img
                     className="object-cover w-full h-56 rounded shadow-lg"
-                    src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                    src="https://i.ibb.co/87DVFtC/vintage-miniature-car-fake-landscape-2.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
                     alt=""
                   />
                   <img
                     className="object-cover w-full h-56 rounded shadow-lg"
-                    src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    src="https://i.ibb.co/LvdtYHX/little-toy-truck-carrying-christmas-tree.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                     alt=""
                   />
                 </div>
