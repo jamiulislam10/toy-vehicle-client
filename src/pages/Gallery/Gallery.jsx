@@ -34,11 +34,10 @@ const Gallery = () => {
               </svg>
               <span className="relative">The</span>
             </span>{' '}
-            quick, brown fox jumps over a lazy dog
+            quick,Toy set has realistic detailed compartments. 
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+          The toy car is made of high quality plastic and alloy that are 100% Safe & Non-Toxic, BPA and Lead-Free.
           </p>
         </div>
         <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
@@ -62,31 +61,26 @@ const Gallery = () => {
           <div className="flex flex-col justify-center">
             <div className="pb-4 mb-4 border-b">
               <h6 className="mb-2 font-semibold leading-5">
-                Sit error voluptatem accusantium
+              SLIDING FORWARD & CUTE MINI SIZE
               </h6>
               <p className="text-sm text-gray-900">
-                Sportacus andrew weatherall goose Refined gentlemen super mario
-                des lynam alpha trion zap rowsdower, omar sharif old.
+              NO batteries required, just push, these little toy cars go a good distance forward, perfect to stimulate baby’s curiosity,
               </p>
             </div>
             <div className="pb-4 mb-4 border-b">
               <h6 className="mb-2 font-semibold leading-5">
-                Cheese on toast airedale the big cheese
+              DEVELOP EARLY INTELLIGENCE FOR CHILDREN 
               </h6>
               <p className="text-sm text-gray-900">
-                Chase ball of string eat plants, meow, and throw up because I ate
-                plants going to catch the red dot today going to catch the red dot
-                today. I could pee on this if I had the energy.
+              It can stimulate kids imagination and encourage hand-eye interaction. These toys can also be added to Easter baskets or given as prizes for an Easter egg hunt.
               </p>
             </div>
             <div>
               <h6 className="mb-2 font-semibold leading-5">
-                A flower in my garden, a mystery
+              Tank Truck, Asphalt Car and Excavator. 
               </h6>
               <p className="text-sm text-gray-900">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae doloremque laudantium.
+              An amazing funny time to playing a different role to drive different car with friends for kids.
               </p>
             </div>
           </div>

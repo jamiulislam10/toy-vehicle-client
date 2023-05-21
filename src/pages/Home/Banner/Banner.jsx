@@ -9,8 +9,8 @@ const Banner = () => {
             <img src={logo1} className="w-full rounded-xl" />
             <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                 <div className='text-white space-y-7 pl-12 w-1/2'>
-                    <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
-                    <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                    <h2 className='text-6xl font-bold'>A model car or toy car is a miniature representation of an automobile. </h2>
+                    <p>There is no precise difference between a model car and a toy car</p>
                     <div>
                         <button className="btn btn-primary mr-5">Discover More</button>
                         <button className="btn btn-outline btn-secondary">Latest Project</button>
@@ -26,8 +26,8 @@ const Banner = () => {
             <img src={logo2} className="w-full rounded-xl" />
             <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                 <div className='text-white space-y-7 pl-12 w-1/2'>
-                    <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
-                    <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                    <h2 className='text-6xl font-bold'>A model car, or toy car, is a miniature representation of an automobile. </h2>
+                    <p>The kit building hobby became popular through the 1950s, while the collecting of miniatures </p>
                     <div>
                         <button className="btn btn-primary mr-5">Discover More</button>
                         <button className="btn btn-outline btn-secondary">Latest Project</button>
@@ -43,8 +43,8 @@ const Banner = () => {
             <img src={logo3} className="w-full rounded-xl" />
             <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                 <div className='text-white space-y-7 pl-12 w-1/2'>
-                    <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
-                    <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                    <h2 className='text-6xl font-bold'>A toy car is used for the entertainment of kids.</h2>
+                    <p>It is the miniature depiction of an automobile and its working </p>
                     <div>
                         <button className="btn btn-primary mr-5">Discover More</button>
                         <button className="btn btn-outline btn-secondary">Latest Project</button>
@@ -60,8 +60,8 @@ const Banner = () => {
             <img src={logo4} className="w-full rounded-xl" />
             <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                 <div className='text-white space-y-7 pl-12 w-1/2'>
-                    <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
-                    <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                    <h2 className='text-6xl font-bold'>The Toy Early Engineering Vehicles are perfect for themed parties</h2>
+                    <p>Great party favors for any time of year</p>
                     <div>
                         <button className="btn btn-primary mr-5">Discover More</button>
                         <button className="btn btn-outline btn-secondary">Latest Project</button>
