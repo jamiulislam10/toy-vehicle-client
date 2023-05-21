@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
+import Swal from 'sweetalert2'
 const TabSection1 = ({ toy }) => {
-
-    const { name, img, price, rating, _id} = toy
+    const { name, img, price, rating, _id } = toy
     return (
 
         <div>
@@ -24,14 +24,23 @@ const TabSection1 = ({ toy }) => {
                                 Price: ${price} <br />
                                 Rating:   {rating} <br />
                             </h1>
-                            <Link to={`/details/${_id}`}> <button className="btn btn-primary">View details</button>
-                            </Link>
+                           
+                            <div className="text-center mt-3">
+                                <Link
+                                    to={`/toy/${_id}`}
+                                    className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-primary hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                                >
+                                    
+                                    View Details
+                                </Link>
+                            </div>
                         </div>
                     </div>
 
 
                 </div>
             </div>
+            
         </div>
 
 

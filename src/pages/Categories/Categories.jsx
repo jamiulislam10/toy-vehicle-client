@@ -2,6 +2,9 @@
 
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+// import Swal from 'sweetalert2/dist/sweetalert2.js'
+
+import Swal from 'sweetalert2'
 
 const Categories = () => {
     const { user } = useContext(AuthContext);
@@ -52,7 +55,13 @@ const Categories = () => {
         .then(data => {
             console.log(data);
             if(data.insertedId){
-                alert('service book successfully')
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Your work has been saved',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
             }
         })
 

@@ -21,6 +21,11 @@ const MyJobsRow = ({ job, handleDelete, }) => {
             <td>{quantity}</td>
             <td>
      <Link to={`/update/${_id}`}><button>Update</button></Link>
+
+
+
+
+     
             </td>
 
         </tr>

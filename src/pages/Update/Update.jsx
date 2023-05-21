@@ -34,7 +34,7 @@ const handleUpdate =event =>{
 
     return (
         <div>
-<form onSubmit={handleUpdate}>
+{/* <form onSubmit={handleUpdate}>
 
 <input className="text-black" type="text" defaultValue={loadedUser?.name} name="name" id="" />
 <br />
@@ -42,7 +42,47 @@ const handleUpdate =event =>{
 <br />
 <input type="submit" value="update" />
 
-</form>
+</form> */}
+
+
+
+
+
+<div className="hero min-h-screen bg-base-200">
+      <div className="hero-content lg:flex-row">
+        <div className="w-1/2 mr-12 ">
+        </div>
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+
+          <div className="card-body">
+            <form onSubmit={handleUpdate}>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Email</span>
+                </label>
+                <input type="text" placeholder="email"  defaultValue={loadedUser?.email} name='email' className="input input-bordered" />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Name</span>
+                </label>
+                <input type="text" placeholder="name"  defaultValue={loadedUser?.name} name='name' className="input input-bordered" />
+               
+              </div>
+              <div className="form-control mt-6">
+                {/* <button className="btn btn-primary">Login</button> */}
+                <input type="submit" value="update" />
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
         </div>
     );

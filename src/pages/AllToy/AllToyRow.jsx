@@ -8,17 +8,15 @@ const AllToyRow = ({ booking }) => {
     return (
         <tr>
           
-            <td>
-                
-            </td>
+            
             <td>{email}</td>
             <td>{customerName}</td>
             <td>{price}</td>
             <td>{quantity}</td>
-            <th>
+            <td>
 
                 <Link to={`/details/${_id}`}><button className="btn btn-active btn-ghost">View details</button></Link>
-            </th>
+            </td>
         </tr>
     );
 };

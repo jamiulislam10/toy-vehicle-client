@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 const ViewDetails = () => {
     const detail = useLoaderData();
     console.log(detail);
-    const{seller,price,customerName,url,details,email, categori,quantity,Rating  }=detail;
+    const{seller,price,customerName,url,details,email, categori,quantity,rating  }=detail;
     return (
         <div className="card w-96 bg-base-100 shadow-xl ml-96 mb-10 mt-10">
         <figure><img src={url} alt="Shoes" /></figure>
@@ -16,7 +16,7 @@ const ViewDetails = () => {
           {/* <p>categori: </p> */}
           <p>available quantity:  {quantity}</p>
           <p>{seller}</p>
-          <p>Rating: {Rating}</p>
+          <p>Rating: {rating}</p>
          <p>description : {details}</p>
        
         </div>

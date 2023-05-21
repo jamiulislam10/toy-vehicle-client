@@ -11,6 +11,7 @@ import Blog from "../pages/Blog/Blog";
 import MyJobs from "../pages/MyJobs/MyJobs";
 import Update from "../pages/Update/Update";
 import FourOFour from "../pages/FourOFour/FourOFour";
+import TabViewDetails from "../pages/TabViewDetails/TabViewDetails";
 
 const router = createBrowserRouter([
     {
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'details/:id',
-                element: <ViewDetails></ViewDetails>,
+                element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
                 loader:({ params }) => fetch(`https://toy-vehicle-server.vercel.app/services/${params.id}`)
             },
             {
@@ -55,7 +56,12 @@ const router = createBrowserRouter([
                 path:'/update/:id',
                 element:<Update></Update>,
                 loader:({params})=>fetch(`https://toy-vehicle-server.vercel.app/mybookingss/${params.id}`)
-            }
+            },
+            {
+                path: 'toy/:id',
+                element: <PrivateRoute><TabViewDetails></TabViewDetails></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`)
+            },
         ]
     },
     {

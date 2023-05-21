@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 
 const TabSection3 = ({toyThree}) => {
-    const { name, img, price, rating,  } = toyThree
+    const { name, img, price, rating, _id } = toyThree
 
     return (
         <div>
@@ -22,8 +23,14 @@ const TabSection3 = ({toyThree}) => {
                                        Price: ${price} <br />
                                       Rating:   {rating} <br />
                                     </h1>
-                                    <button className="btn btn-primary">View details</button>
-                                
+                                    <div className="text-center mt-3">
+                                <Link
+                                    to={`/toy/${_id}`}
+                                    className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-primary hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                                >
+                                    View Details
+                                </Link>
+                            </div>                                
                                 </div>
                             </div>
         
