@@ -31,7 +31,7 @@ const router = createBrowserRouter([
             },
 
             {
-                path: '/adtoy',
+                path: '/addtoy',
                 element: <Categories></Categories>
             },
             {
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
             {
                 path:'/update/:id',
                 element:<Update></Update>,
-                loader:({params})=>fetch(`http://localhost:5000/mybookings/${params.id}`)
+                loader:({params})=>fetch(`http://localhost:5000/mybookingss/${params.id}`)
             }
         ]
     },

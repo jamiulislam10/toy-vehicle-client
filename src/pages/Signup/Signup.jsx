@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import img from '../../assets/4957412_Mobile-login-Cristin.png'
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Signup = () => {
+    const [error,setError]= useState('')
+    const [success,setSuccess]= useState('')
 const {createUser} =useContext(AuthContext)
     const handleSignUp = event => {
         event.preventDefault();
@@ -13,12 +15,29 @@ const {createUser} =useContext(AuthContext)
         const password = form.password.value;
         const photo= form.photo.value;
         console.log(name,email,password,photo);
+        setSuccess('')
+        setError('')
+
+
+        if (!/(?=.*?[A-Z])/.test(password)) {
+            setError('Please add at least one uppercase')
+            return  
+        }
+
+
+
    createUser(email,password)
    .then(result =>{
     const user = result.user;
     console.log(user);
+    setError('');
+    event.target.reset();
+    setSuccess('User has created Success')
    })
-   .catch(error => console.log(error))
+   .catch(error => {
+    setError(error.message);
+    
+})
    
     }
 
@@ -48,7 +67,7 @@ const {createUser} =useContext(AuthContext)
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" name='password' placeholder="password" className="input input-bordered" />
+                                <input type="password" name='password' placeholder="password" className="input input-bordered" />
                             
                             </div>
                             <div className="form-control">
@@ -62,6 +81,8 @@ const {createUser} =useContext(AuthContext)
                                 <input className="btn btn-primary" type="submit" value="Sign Up" />
                             </div>
                         </form>
+                        <p className='text-red-700'>{error}</p>
+                <p className='text-blue-700'>{success}</p>
                         <p className='my-4 text-center'>Already Have an Account? <Link className='text-orange-600 font-bold' to="/login">Login</Link> </p>
                     </div>
                 </div>

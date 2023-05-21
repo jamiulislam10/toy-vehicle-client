@@ -1,13 +1,20 @@
-import { useContext } from "react";
+import { useContext} from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 const GoogleLogin = () => {
+    const navigate = useNavigate();
 
     const {googleSignIn}= useContext(AuthContext);
     const handleGoogleSignIn = () =>{
         googleSignIn()
         .then(result =>{
-            console.log(result.user)
+            const loggedInUser = result.user;
+
+            console.log(loggedInUser.user)
+
+            navigate('/')
+
         })
         .catch(error => console.log(error))
     }

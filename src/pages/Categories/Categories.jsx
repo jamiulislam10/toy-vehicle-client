@@ -59,7 +59,6 @@ const Categories = () => {
     }
     return (
         <div>
-            <h2 className='text-center text-3xl'>Book Service:  </h2>
             <form onSubmit={handleBookService}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="form-control">
