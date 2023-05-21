@@ -35,7 +35,6 @@ const MyJobs = () => {
   }
     return (
       <div>
-      <h1>Your bookings: {jobs.length}</h1>
 
       <div className="overflow-x-auto">
           <table className="table table-compact w-full">

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-import Swal from 'sweetalert2'
 const TabSection1 = ({ toy }) => {
     const { name, img, price, rating, _id } = toy
     return (

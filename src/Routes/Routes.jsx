@@ -60,7 +60,7 @@ const router = createBrowserRouter([
             {
                 path: 'toy/:id',
                 element: <PrivateRoute><TabViewDetails></TabViewDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`)
+                loader: ({ params }) => fetch(`https://toy-vehicle-server.vercel.app/toy/${params.id}`)
             },
         ]
     },

@@ -13,8 +13,9 @@ const handleUpdate =event =>{
     const form =event.target;
     const name = form.name.value;
     const email = form.email.value;
-    console.log(name,email);
-    const updatedUser = {name,email}
+    const price = form.price.value;
+    console.log(name,email,price);
+    const updatedUser = {name,email,price}
 
 
     fetch(`https://toy-vehicle-server.vercel.app/mybookingss/${loadedUser._id}`,{
@@ -65,7 +66,7 @@ const handleUpdate =event =>{
                 <label className="label">
                   <span className="label-text">Price</span>
                 </label>
-                <input type="text" placeholder="Price"  defaultValue={loadedUser?.name} name='name' className="input input-bordered" />
+                <input type="text" name="price" placeholder="Price"  defaultValue={loadedUser?.price} className="input input-bordered" />
                
               </div>
             

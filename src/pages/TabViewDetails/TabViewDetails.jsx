@@ -43,14 +43,9 @@ const TabViewDetails = () => {
                                 </div>
                                 <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-20 mt-2'>
                                     <h4 className='text-xl font-bold text-purple-400'>Price : <span className='text-lg text-black'>${price}</span> </h4>
-                                    {/* <h4 className='text-xl font-bold text-purple-400'>Quantity : <span className='text-lg text-black'>{quantity}</span> </h4> */}
                                 </div>
                                 <div className='mt-2'>
-                                    {/* <div className='ml-12'>
-                                        <h6 className='text-lg text-black'>1.{subCategory[0]}</h6>
-                                        <h6 className='text-lg text-black'>2.{subCategory[1]}</h6>
-                                        <h6 className='text-lg text-black'>3.{subCategory[2]}</h6>
-                                    </div> */}
+                                  
                                 </div>
     
     
