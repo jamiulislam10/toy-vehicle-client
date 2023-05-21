@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const MyJobsRow = ({ job, handleDelete, }) => {
     const { email, _id, customerName, price, quantity } = job
+    console.log(job);
     console.log(_id);
     // const { user } = useContext(AuthContext);
 

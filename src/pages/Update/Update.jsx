@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 
 const Update = () => {
+    useEffect(() => {
+        document.title = 'Toy Vehicle| Update';
+    }, [])
     const loadedUser = useLoaderData()
     console.log(loadedUser);
 
@@ -34,18 +38,6 @@ const handleUpdate =event =>{
 
     return (
         <div>
-{/* <form onSubmit={handleUpdate}>
-
-<input className="text-black" type="text" defaultValue={loadedUser?.name} name="name" id="" />
-<br />
-<input type="email" defaultValue={loadedUser?.email} name="email" id="" />
-<br />
-<input type="submit" value="update" />
-
-</form> */}
-
-
-
 
 
 <div className="hero min-h-screen bg-base-200">
@@ -69,9 +61,16 @@ const handleUpdate =event =>{
                 <input type="text" placeholder="name"  defaultValue={loadedUser?.name} name='name' className="input input-bordered" />
                
               </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Price</span>
+                </label>
+                <input type="text" placeholder="Price"  defaultValue={loadedUser?.name} name='name' className="input input-bordered" />
+               
+              </div>
+            
               <div className="form-control mt-6">
-                {/* <button className="btn btn-primary">Login</button> */}
-                <input type="submit" value="update" />
+                <button className="btn btn-primary">update</button>
 
               </div>
             </form>
